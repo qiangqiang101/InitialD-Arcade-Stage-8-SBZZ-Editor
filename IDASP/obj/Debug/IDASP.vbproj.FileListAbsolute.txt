@@ -1,0 +1,11 @@
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\bin\Debug\IDASP.exe.config
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\bin\Debug\IDASP.exe
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\bin\Debug\IDASP.pdb
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\bin\Debug\IDASP.xml
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.vbprojResolveAssemblyReference.cache
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.frmMain.resources
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.Resources.resources
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.vbproj.GenerateResource.Cache
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.exe
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.xml
+c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.pdb
