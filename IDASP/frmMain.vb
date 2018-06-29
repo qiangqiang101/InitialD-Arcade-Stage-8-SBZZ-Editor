@@ -159,6 +159,546 @@ Public Class frmMain
 
 #Region "BGM 11-19"
 
+            'BGM19
+            charInt = 0
+            For Each c As Char In myProperties.BGM19.SongName
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 7 Then
+                Dim amount As Integer = 8 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC84, SetName(myProperties.BGM19.SongName & newName))
+            Else
+                SetHex(_filename, &HB2AC84, SetName(myProperties.BGM19.SongName))
+            End If
+
+            charInt = 0
+            For Each c As Char In myProperties.BGM19.Artists
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 7 Then
+                Dim amount As Integer = 8 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC90, SetName(myProperties.BGM19.Artists & newName))
+            Else
+                SetHex(_filename, &HB2AC90, SetName(myProperties.BGM19.Artists))
+            End If
+
+            'BGM18
+            charInt = 0
+            For Each c As Char In myProperties.BGM18.SongName
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 18 Then
+                Dim amount As Integer = 19 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                    Case 11
+                        newName = b & b & b & b & b & b & b & b & b & b & b
+                    Case 12
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 13
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 14
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 15
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 16
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 17
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 18
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 19
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC64, SetName(myProperties.BGM18.SongName & newName))
+            Else
+                SetHex(_filename, &HB2AC64, SetName(myProperties.BGM18.SongName))
+            End If
+
+            charInt = 0
+            For Each c As Char In myProperties.BGM18.Artists
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 7 Then
+                Dim amount As Integer = 8 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC78, SetName(myProperties.BGM18.Artists & newName))
+            Else
+                SetHex(_filename, &HB2AC78, SetName(myProperties.BGM18.Artists))
+            End If
+
+            'BGM17
+            charInt = 0
+            For Each c As Char In myProperties.BGM17.SongName
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 10 Then
+                Dim amount As Integer = 11 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                    Case 11
+                        newName = b & b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC3C, SetName(myProperties.BGM17.SongName & newName))
+            Else
+                SetHex(_filename, &HB2AC3C, SetName(myProperties.BGM17.SongName))
+            End If
+
+            charInt = 0
+            For Each c As Char In myProperties.BGM17.Artists
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 24 Then
+                Dim amount As Integer = 25 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                    Case 11
+                        newName = b & b & b & b & b & b & b & b & b & b & b
+                    Case 12
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 13
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 14
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 15
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 16
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 17
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 18
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 19
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 20
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 21
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 22
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 23
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 24
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 25
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC48, SetName(myProperties.BGM17.Artists & newName))
+            Else
+                SetHex(_filename, &HB2AC48, SetName(myProperties.BGM17.Artists))
+            End If
+
+            'BGM16
+            charInt = 0
+            For Each c As Char In myProperties.BGM16.SongName
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 25 Then
+                Dim amount As Integer = 26 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                    Case 11
+                        newName = b & b & b & b & b & b & b & b & b & b & b
+                    Case 12
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 13
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 14
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 15
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 16
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 17
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 18
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 19
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 20
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 21
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 22
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 23
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 24
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 25
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 26
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC10, SetName(myProperties.BGM16.SongName & newName))
+            Else
+                SetHex(_filename, &HB2AC10, SetName(myProperties.BGM16.SongName))
+            End If
+
+            charInt = 0
+            For Each c As Char In myProperties.BGM16.Artists
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 13 Then
+                Dim amount As Integer = 14 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                    Case 11
+                        newName = b & b & b & b & b & b & b & b & b & b & b
+                    Case 12
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 13
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 14
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC2C, SetName(myProperties.BGM16.Artists & newName))
+            Else
+                SetHex(_filename, &HB2AC2C, SetName(myProperties.BGM16.Artists))
+            End If
+
+            'BGM15
+            charInt = 0
+            For Each c As Char In myProperties.BGM15.SongName
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 14 Then
+                Dim amount As Integer = 15 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                    Case 11
+                        newName = b & b & b & b & b & b & b & b & b & b & b
+                    Case 12
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 13
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 14
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                    Case 15
+                        newName = b & b & b & b & b & b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2ABF8, SetName(myProperties.BGM15.SongName & newName))
+            Else
+                SetHex(_filename, &HB2ABF8, SetName(myProperties.BGM15.SongName))
+            End If
+
+            charInt = 0
+            For Each c As Char In myProperties.BGM15.Artists
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 5 Then
+                Dim amount As Integer = 6 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2AC08, SetName(myProperties.BGM15.Artists & newName))
+            Else
+                SetHex(_filename, &HB2AC08, SetName(myProperties.BGM15.Artists))
+            End If
+
+            'BGM14
+            charInt = 0
+            For Each c As Char In myProperties.BGM14.SongName
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 9 Then
+                Dim amount As Integer = 10 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                    Case 4
+                        newName = b & b & b & b
+                    Case 5
+                        newName = b & b & b & b & b
+                    Case 6
+                        newName = b & b & b & b & b & b
+                    Case 7
+                        newName = b & b & b & b & b & b & b
+                    Case 8
+                        newName = b & b & b & b & b & b & b & b
+                    Case 9
+                        newName = b & b & b & b & b & b & b & b & b
+                    Case 10
+                        newName = b & b & b & b & b & b & b & b & b & b
+                End Select
+                SetHex(_filename, &HB2ABE8, SetName(myProperties.BGM14.SongName & newName))
+            Else
+                SetHex(_filename, &HB2ABE8, SetName(myProperties.BGM14.SongName))
+            End If
+
+            charInt = 0
+            For Each c As Char In myProperties.BGM14.Artists
+                If c.IsWideEastAsianWidth_SJIS Then
+                    charInt += 2
+                Else
+                    charInt += 1
+                End If
+            Next
+            If charInt <= 2 Then
+                Dim amount As Integer = 3 - charInt
+                Dim newName As Char = Nothing
+                Dim b As Char = Chr(0)
+                Select Case amount
+                    Case 1
+                        newName = b
+                    Case 2
+                        newName = b & b
+                    Case 3
+                        newName = b & b & b
+                End Select
+                SetHex(_filename, &HB2ABF4, SetName(myProperties.BGM14.Artists & newName))
+            Else
+                SetHex(_filename, &HB2ABF4, SetName(myProperties.BGM14.Artists))
+            End If
+
             'BGM13
             charInt = 0
             For Each c As Char In myProperties.BGM13.SongName
