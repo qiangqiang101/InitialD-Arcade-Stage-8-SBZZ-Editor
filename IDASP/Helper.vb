@@ -4,20 +4,26 @@ Imports System.Text
 Module Helper
 
     Function GetHex(filename As String, offset As Integer, requiredBytes As Integer) As Byte()
-        Dim value(0 To requiredBytes - 1) As Byte
-        Using reader As New BinaryReader(File.Open(filename, FileMode.Open))
-            ' Loop through length of file.
-            Dim fileLength As Long = reader.BaseStream.Length
-            Dim byteCount As Integer = 0
-            reader.BaseStream.Seek(offset, SeekOrigin.Begin)
-            While offset < fileLength And byteCount < requiredBytes
-                value(byteCount) = reader.ReadByte()
-                offset += 1
-                byteCount += 1
-            End While
-        End Using
+        Try
+            Dim value(0 To requiredBytes - 1) As Byte
+            Using reader As New BinaryReader(File.Open(filename, FileMode.Open))
+                ' Loop through length of file.
+                Dim fileLength As Long = reader.BaseStream.Length
+                Dim byteCount As Integer = 0
+                reader.BaseStream.Seek(offset, SeekOrigin.Begin)
+                While offset < fileLength And byteCount < requiredBytes
+                    value(byteCount) = reader.ReadByte()
+                    offset += 1
+                    byteCount += 1
+                End While
+                reader.Dispose()
+            End Using
 
-        Return value
+            Return value
+        Catch ex As Exception
+            MsgBox(ex.Message, MessageBoxIcon.Error, "Error")
+            Logger.Log(ex.Message & ex.StackTrace)
+        End Try
     End Function
 
     Sub SetHex(filename As String, offset As Long, value As Byte())

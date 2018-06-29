@@ -1,0 +1,20 @@
+29/Jun/2018 7:47:06 AM:The process cannot access the file 'C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\bin\Debug\InitialD8_GLW_RE_SBZZ_redumped_.exe' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode)
+   at IDASP.Helper.GetHex(String filename, Int32 offset, Int32 requiredBytes) in C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\Helper.vb:line 9
+29/Jun/2018 7:47:50 AM:The process cannot access the file 'C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\bin\Debug\InitialD8_GLW_RE_SBZZ_redumped_.exe' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode)
+   at IDASP.Helper.GetHex(String filename, Int32 offset, Int32 requiredBytes) in C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\Helper.vb:line 9
+29/Jun/2018 7:50:38 AM:The process cannot access the file 'D:\TeknoParrot\Games\ID8\InitialD8_GLW_RE_SBZZ_redumped_.exe' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode)
+   at IDASP.Helper.GetHex(String filename, Int32 offset, Int32 requiredBytes) in C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\Helper.vb:line 9
+29/Jun/2018 7:51:07 AM:The process cannot access the file 'D:\TeknoParrot\Games\ID8\InitialD8_GLW_RE_SBZZ_redumped_.exe' because it is being used by another process.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.Open(String path, FileMode mode)
+   at IDASP.Helper.GetHex(String filename, Int32 offset, Int32 requiredBytes) in C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\Helper.vb:line 9

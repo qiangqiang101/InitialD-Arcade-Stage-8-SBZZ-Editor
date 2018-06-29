@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("IDASP")>
+<Assembly: AssemblyTitle("InitialD Arcade Stage 8 Editor")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Microsoft")>
-<Assembly: AssemblyProduct("IDASP")>
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2018")>
+<Assembly: AssemblyCompany("Zettabyte Technology")>
+<Assembly: AssemblyProduct("InitialD Arcade Stage 8 Editor")>
+<Assembly: AssemblyCopyright("Copyright © 2018 Zettabyte Technology")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

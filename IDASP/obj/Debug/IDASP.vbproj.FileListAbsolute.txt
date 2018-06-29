@@ -9,3 +9,14 @@ c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDAS
 c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.exe
 c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.xml
 c:\users\potato\documents\visual studio 2015\Projects\IDASP\IDASP\obj\Debug\IDASP.pdb
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\bin\Debug\IDASE.exe.config
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\bin\Debug\IDASE.exe
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\bin\Debug\IDASE.pdb
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\bin\Debug\IDASE.xml
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASP.vbprojResolveAssemblyReference.cache
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASP.frmMain.resources
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASP.Resources.resources
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASP.vbproj.GenerateResource.Cache
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASE.exe
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASE.xml
+C:\Users\Potato\Documents\GitHub\InitialD-Arcade-Stage-8-SBZZ-Editor\IDASP\obj\Debug\IDASE.pdb

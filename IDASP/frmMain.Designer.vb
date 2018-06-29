@@ -30,17 +30,29 @@ Partial Class frmMain
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tsslFileName = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.btnPatch = New System.Windows.Forms.Button()
-        Me.btnAbout = New System.Windows.Forms.Button()
         Me.PropertyGrid1 = New System.Windows.Forms.PropertyGrid()
-        Me.Separator1 = New IDASP.Separator()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImNotMentaLWebsiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ZettabyteTechnologyWebsiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TeknoParrotOfficialWebsiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TeknoGodsOfficialWebsiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.DiscordChannelsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WereNotMentaL20ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IDPLAYERSEYNAASIAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.頭文字D中文討論區ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.頭文字DnetEmulationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TeknoGodsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextToHexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem, Me.TextToHexToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(484, 24)
@@ -49,7 +61,7 @@ Partial Class frmMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.ToolStripSeparator1, Me.SaveToolStripMenuItem, Me.ToolStripSeparator2, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -58,24 +70,25 @@ Partial Class frmMain
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenToolStripMenuItem.Text = "&Open"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(143, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsslFileName})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 290)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 640)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(484, 22)
         Me.StatusStrip1.TabIndex = 2
@@ -87,65 +100,122 @@ Partial Class frmMain
         Me.tsslFileName.Size = New System.Drawing.Size(49, 17)
         Me.tsslFileName.Text = "Untitled"
         '
-        'btnPatch
-        '
-        Me.btnPatch.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnPatch.Enabled = False
-        Me.btnPatch.Location = New System.Drawing.Point(164, 264)
-        Me.btnPatch.Name = "btnPatch"
-        Me.btnPatch.Size = New System.Drawing.Size(75, 23)
-        Me.btnPatch.TabIndex = 3
-        Me.btnPatch.Text = "Save"
-        Me.btnPatch.UseVisualStyleBackColor = True
-        '
-        'btnAbout
-        '
-        Me.btnAbout.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnAbout.Location = New System.Drawing.Point(245, 264)
-        Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(75, 23)
-        Me.btnAbout.TabIndex = 4
-        Me.btnAbout.Text = "About"
-        Me.btnAbout.UseVisualStyleBackColor = True
-        '
         'PropertyGrid1
         '
-        Me.PropertyGrid1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PropertyGrid1.Location = New System.Drawing.Point(12, 27)
+        Me.PropertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PropertyGrid1.Location = New System.Drawing.Point(0, 24)
         Me.PropertyGrid1.Name = "PropertyGrid1"
-        Me.PropertyGrid1.Size = New System.Drawing.Size(460, 223)
+        Me.PropertyGrid1.Size = New System.Drawing.Size(484, 616)
         Me.PropertyGrid1.TabIndex = 5
         '
-        'Separator1
+        'SaveToolStripMenuItem
         '
-        Me.Separator1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Separator1.Location = New System.Drawing.Point(12, 256)
-        Me.Separator1.Name = "Separator1"
-        Me.Separator1.Size = New System.Drawing.Size(460, 2)
-        Me.Separator1.TabIndex = 1
+        Me.SaveToolStripMenuItem.Enabled = False
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Text = "&Save"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImNotMentaLWebsiteToolStripMenuItem, Me.ZettabyteTechnologyWebsiteToolStripMenuItem, Me.TeknoParrotOfficialWebsiteToolStripMenuItem, Me.TeknoGodsOfficialWebsiteToolStripMenuItem, Me.ToolStripSeparator3, Me.DiscordChannelsToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'ImNotMentaLWebsiteToolStripMenuItem
+        '
+        Me.ImNotMentaLWebsiteToolStripMenuItem.Name = "ImNotMentaLWebsiteToolStripMenuItem"
+        Me.ImNotMentaLWebsiteToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.ImNotMentaLWebsiteToolStripMenuItem.Text = "I'm Not MentaL Official Website"
+        '
+        'ZettabyteTechnologyWebsiteToolStripMenuItem
+        '
+        Me.ZettabyteTechnologyWebsiteToolStripMenuItem.Name = "ZettabyteTechnologyWebsiteToolStripMenuItem"
+        Me.ZettabyteTechnologyWebsiteToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.ZettabyteTechnologyWebsiteToolStripMenuItem.Text = "Zettabyte Technology Website"
+        '
+        'TeknoParrotOfficialWebsiteToolStripMenuItem
+        '
+        Me.TeknoParrotOfficialWebsiteToolStripMenuItem.Name = "TeknoParrotOfficialWebsiteToolStripMenuItem"
+        Me.TeknoParrotOfficialWebsiteToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.TeknoParrotOfficialWebsiteToolStripMenuItem.Text = "TeknoParrot Official Website"
+        '
+        'TeknoGodsOfficialWebsiteToolStripMenuItem
+        '
+        Me.TeknoGodsOfficialWebsiteToolStripMenuItem.Name = "TeknoGodsOfficialWebsiteToolStripMenuItem"
+        Me.TeknoGodsOfficialWebsiteToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.TeknoGodsOfficialWebsiteToolStripMenuItem.Text = "Teknogods Official Website"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(240, 6)
+        '
+        'DiscordChannelsToolStripMenuItem
+        '
+        Me.DiscordChannelsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WereNotMentaL20ToolStripMenuItem, Me.IDPLAYERSEYNAASIAToolStripMenuItem, Me.頭文字D中文討論區ToolStripMenuItem, Me.頭文字DnetEmulationToolStripMenuItem, Me.TeknoGodsToolStripMenuItem})
+        Me.DiscordChannelsToolStripMenuItem.Name = "DiscordChannelsToolStripMenuItem"
+        Me.DiscordChannelsToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.DiscordChannelsToolStripMenuItem.Text = "Discord Servers"
+        '
+        'WereNotMentaL20ToolStripMenuItem
+        '
+        Me.WereNotMentaL20ToolStripMenuItem.Name = "WereNotMentaL20ToolStripMenuItem"
+        Me.WereNotMentaL20ToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.WereNotMentaL20ToolStripMenuItem.Text = "We're Not MentaL 2.0"
+        '
+        'IDPLAYERSEYNAASIAToolStripMenuItem
+        '
+        Me.IDPLAYERSEYNAASIAToolStripMenuItem.Name = "IDPLAYERSEYNAASIAToolStripMenuItem"
+        Me.IDPLAYERSEYNAASIAToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.IDPLAYERSEYNAASIAToolStripMenuItem.Text = "IDPLAYERS EU/NA/ASIA"
+        '
+        '頭文字D中文討論區ToolStripMenuItem
+        '
+        Me.頭文字D中文討論區ToolStripMenuItem.Name = "頭文字D中文討論區ToolStripMenuItem"
+        Me.頭文字D中文討論區ToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.頭文字D中文討論區ToolStripMenuItem.Text = "頭文字D 中文討論區"
+        '
+        '頭文字DnetEmulationToolStripMenuItem
+        '
+        Me.頭文字DnetEmulationToolStripMenuItem.Name = "頭文字DnetEmulationToolStripMenuItem"
+        Me.頭文字DnetEmulationToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.頭文字DnetEmulationToolStripMenuItem.Text = "頭文字D.net Emulation"
+        '
+        'TeknoGodsToolStripMenuItem
+        '
+        Me.TeknoGodsToolStripMenuItem.Name = "TeknoGodsToolStripMenuItem"
+        Me.TeknoGodsToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.TeknoGodsToolStripMenuItem.Text = "TeknoGods"
+        '
+        'TextToHexToolStripMenuItem
+        '
+        Me.TextToHexToolStripMenuItem.Name = "TextToHexToolStripMenuItem"
+        Me.TextToHexToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
+        Me.TextToHexToolStripMenuItem.Text = "Text to Hex"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(484, 312)
+        Me.ClientSize = New System.Drawing.Size(484, 662)
         Me.Controls.Add(Me.PropertyGrid1)
-        Me.Controls.Add(Me.btnAbout)
-        Me.Controls.Add(Me.btnPatch)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.Controls.Add(Me.Separator1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(500, 1080)
+        Me.MinimumSize = New System.Drawing.Size(500, 350)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "InitialD Arcade Stage Patch"
+        Me.Text = "InitialD Arcade Stage 8 Editor"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
@@ -160,10 +230,22 @@ Partial Class frmMain
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Separator1 As Separator
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents tsslFileName As ToolStripStatusLabel
-    Friend WithEvents btnPatch As Button
-    Friend WithEvents btnAbout As Button
     Friend WithEvents PropertyGrid1 As PropertyGrid
+    Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImNotMentaLWebsiteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ZettabyteTechnologyWebsiteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TeknoParrotOfficialWebsiteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TeknoGodsOfficialWebsiteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents DiscordChannelsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WereNotMentaL20ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IDPLAYERSEYNAASIAToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 頭文字D中文討論區ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 頭文字DnetEmulationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TeknoGodsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TextToHexToolStripMenuItem As ToolStripMenuItem
 End Class
